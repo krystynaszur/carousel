@@ -1,0 +1,13 @@
+.carousel-cell {
+  width: 100vw;
+  /* full width */
+  height: 50vh;
+  /* height of carousel */
+  margin-right: 10px;
+  min-width: 250px;
+}
+
+.container {
+  max-width: 1200px;
+}
+/*# sourceMappingURL=style.prefixed.css.map */
