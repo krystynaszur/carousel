@@ -9,6 +9,13 @@
 
 .container {
   max-width: 1200px;
+  height: 100%;
+  max-width: 1200px;
+    
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
