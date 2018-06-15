@@ -5,9 +5,50 @@
   /* height of carousel */
   margin-right: 10px;
   min-width: 250px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-shadow: 2px 2px black;
 }
 
 .container {
   max-width: 1200px;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+#restart {
+  position: relative;
+  width: 120px;
+  height: 35px;
+  margin: 20px;
+  z-index: 10;
+  top: -90px;
+  left: 15vw;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  background-color: #7f8c8d;
+  border-width: 1px;
+}
+
+.carousel {
+  z-index: 0;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0;
+  background: #7f8c8d;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
