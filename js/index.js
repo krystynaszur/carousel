@@ -7,12 +7,6 @@ var flkty = new Flickity( elem, {
   hash: true
 });
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.carousel', {
-  
-});
-
 var restart = document.getElementById('restart');
 restart.addEventListener( 'click', function() {
   flkty.selectCell("#carousel-cell1");
