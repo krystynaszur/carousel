@@ -12,20 +12,64 @@
 
 <body>
         <div class="carousel js-flickity"> 
-                <div class="carousel-cell"id="carousel-cell1"><div class="container" style="background-image: url(https://www.quebecoriginal.com/sites/default/files/h-montreal_0.jpg)">Montreal</div></div>
-                <div class="carousel-cell" id="carousel-cell2"><div class="container" style="background-image: url(https://handluggageonly.co.uk/wp-content/uploads/2016/09/Hand-Luggage-Only-5.jpg)">Banff</div></div>
-                <div class="carousel-cell" id="carousel-cell3"><div class="container" style="background-image: url(https://assets3.thrillist.com/v1/image/1731804/size/tl-horizontal_main.jpg)">Bay of Fundy</div></div>
-                <div class="carousel-cell" id="carousel-cell4"><div class="container" style="background-image: url(https://assets3.thrillist.com/v1/image/1731813/size/tl-horizontal_main.jpg)">Nunavut</div></div>
-                <div class="carousel-cell" id="carousel-cell5"><div class="container"style="background-image: url(https://innakogan.com/wp-content/uploads/2016/01/pei_briarislandlight_canon-563.jpg)">Prince Edward Island</div></div>
-                <div class="carousel-cell" id="carousel-cell5"><div class="container"style="background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2017/02/torngat-mountains-1024x683.jpg">Torngat Mountains</div></div>
-                <div class="carousel-cell" id="carousel-cell5"><div class="container"style="background-image: url(https://cdn.theculturetrip.com/wp-content/uploads/2017/02/sunshine-coast-1024x681.jpg)">Roberts Creek</div></div>
+                <div class="carousel-cell"id="carousel-cell1"></div>
+                <div class="carousel-cell" id="carousel-cell2"></div>
+                <div class="carousel-cell" id="carousel-cell3"></div>
+                <div class="carousel-cell" id="carousel-cell4"></div>
+                <div class="carousel-cell" id="carousel-cell5"></div>
+                <div class="carousel-cell" id="carousel-cell5"></div>
+                <div class="carousel-cell" id="carousel-cell5"></div>
         </div>
         <div class="progress-bar"></div>
         <button id ="restart">RESTART</button>
 
+        <script id="place" type="x-tmpl-mustache">
+           <div class="container" style="background-image: url({{ image }})"><div class="place-description"><header>{{ title }}</header>{{{ description }}}</div></div>
+        </script>
+
+        <script>
+        var places = [
+	{
+		image: 'https://www.quebecoriginal.com/sites/default/files/h-montreal_0.jpg', 
+        title: 'Montreal',
+        description: '<p>A city that is in love with festivals, the arts, good food and living well.</p>'
+	},
+	{
+        image: 'https://handluggageonly.co.uk/wp-content/uploads/2016/09/Hand-Luggage-Only-5.jpg', 
+        title: 'Banff',
+        description: '<p>Rocky Mountain peaks, turquoise glacial lakes, abundant wildlife and scenic drives.</p>'
+	},
+	{
+        image: 'https://assets3.thrillist.com/v1/image/1731804/size/tl-horizontal_main.jpg', 
+        title: 'Bay of Fundy',
+        description: '<p>The highest tides on earth, the rarest whales in the world and dinosaur fossils</p>'
+    },
+    {
+        image: 'https://assets3.thrillist.com/v1/image/1731813/size/tl-horizontal_main.jpg', 
+        title: 'Nunavut',
+        description: '<p>Expanses of tundra, craggy mountains and remote villages, accessible only by plane or boat.</p>'
+    },
+    {
+        image: 'https://innakogan.com/wp-content/uploads/2016/01/pei_briarislandlight_canon-563.jpg', 
+        title: 'Prince Edward Island',
+        description: '<p>Red-sand beaches, lighthouses and famous seafood like lobster and mussels. </p>'
+    },
+    {
+        image: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/02/torngat-mountains-1024x683.jpg', 
+        title: 'Torngat Mountains',
+        description: '<p> A land of mountains and polar bears, small glaciers, and caribou. </p>'
+    },
+    {
+        image: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/02/sunshine-coast-1024x681.jpg', 
+        title: 'Roberts Creek',
+        description: '<p>Famous of its art, beach and hippy living.</p>'
+	}
+];
+</script>
        
     <script  src="vendor/flickity.pkgd.min.js"></script>
     <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <script  src="js/index.js"></script>
 
 </body>

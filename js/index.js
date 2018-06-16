@@ -1,3 +1,18 @@
+var placePresentation = document.getElementById('place').innerHTML;
+Mustache.parse(placePresentation);
+
+var slides = [];
+
+for(var i = 0; i < places.length; i++){
+ var slide= Mustache.render(placePresentation, places[i]);
+ slides.push(slide);
+}
+
+var cells = document.getElementsByClassName('carousel-cell');
+for(var i = 0; i < cells.length; i++){
+cells[i].insertAdjacentHTML('beforeend', slides[i]);
+}
+
 var elem = document.querySelector('.carousel');
 var flkty = new Flickity( elem, {
   // options

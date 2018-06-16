@@ -1,54 +1,18 @@
-.carousel-cell {
-  width: 100vw;
-  /* full width */
-  height: 50vh;
-  /* height of carousel */
-  margin-right: 10px;
-  min-width: 250px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 50px;
-  text-shadow: 2px 2px black;
-}
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+body { font-family: 'Quicksand', sans-serif; }
 
-.container {
-  max-width: 1200px;
-  height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-}
+.carousel-cell { width: 100vw; /* full width */ height: 50vh; /* height of carousel */ margin-right: 10px; min-width: 250px; color: white; }
 
-#restart {
-  position: relative;
-  width: 120px;
-  height: 35px;
-  margin: 20px;
-  z-index: 10;
-  top: -90px;
-  left: 15vw;
-  border-radius: 5px;
-  font-weight: bold;
-  color: white;
-  background-color: #7f8c8d;
-  border-width: 1px;
-}
+.container { max-width: 1200px; height: 100%; width: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; text-align: center; }
 
-.carousel {
-  z-index: 0;
-}
+#restart { position: relative; width: 120px; height: 35px; margin: 20px; z-index: 10; top: -90px; left: 15vw; border-radius: 5px; font-weight: bold; color: white; background-color: #7f8c8d; border-width: 1px; }
 
-.progress-bar {
-  height: 20px;
-  width: 0;
-  background: #7f8c8d;
-}
-/*# sourceMappingURL=style.prefixed.css.map */
+.carousel { z-index: 0; }
+
+.progress-bar { height: 20px; width: 0; background: #7f8c8d; }
+
+.place-description { background-color: rgba(0, 0, 0, 0.7); margin: 5vw 15vw; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding: 30px; }
+
+.container p { font-size: 30px; }
+
+.container header { text-transform: uppercase; font-size: 50px; text-shadow: 2px 2px black; }
