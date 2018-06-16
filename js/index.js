@@ -33,3 +33,13 @@ flkty.on( 'scroll', function( progress ) {
   progress = Math.max( 0, Math.min( 1, progress ) );
   progressBar.style.width = progress * 100 + '%';
 });
+
+function initMap() {
+  
+  for(var i = 0; i < cells.length; i++){
+    var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: places[i].coords});
+      var marker = new google.maps.Marker({position: places[i].coords, map: map});
+      console.log (places[i].coords);
+  };
+}

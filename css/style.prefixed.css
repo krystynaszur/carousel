@@ -3,7 +3,7 @@ body { font-family: 'Quicksand', sans-serif; }
 
 .carousel-cell { width: 100vw; /* full width */ height: 50vh; /* height of carousel */ margin-right: 10px; min-width: 250px; color: white; }
 
-.container { max-width: 1200px; height: 100%; width: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; text-align: center; }
+.container { max-width: 1200px; height: 100%; width: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; text-align: center; margin: 0 auto; }
 
 #restart { position: relative; width: 120px; height: 35px; margin: 20px; z-index: 10; top: -90px; left: 15vw; border-radius: 5px; font-weight: bold; color: white; background-color: #7f8c8d; border-width: 1px; }
 
@@ -16,3 +16,5 @@ body { font-family: 'Quicksand', sans-serif; }
 .container p { font-size: 30px; }
 
 .container header { text-transform: uppercase; font-size: 50px; text-shadow: 2px 2px black; }
+
+#map { height: 50vh; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ top: -80px; }
