@@ -35,11 +35,11 @@ flkty.on( 'scroll', function( progress ) {
 });
 
 function initMap() {
-  
+  var montreal = {lat: 45.535836, lng: -73.712458};
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 3, center: montreal});
+
   for(var i = 0; i < cells.length; i++){
-    var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 4, center: places[i].coords});
       var marker = new google.maps.Marker({position: places[i].coords, map: map});
-      console.log (places[i].coords);
-  };
-}
+   }
+}  

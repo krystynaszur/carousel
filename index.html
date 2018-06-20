@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <div class="half-window">
         <div class="carousel js-flickity"> 
                 <div class="carousel-cell"id="carousel-cell1"></div>
                 <div class="carousel-cell" id="carousel-cell2"></div>
@@ -22,8 +23,9 @@
         </div>
         <div class="progress-bar"></div>
         <button id ="restart">RESTART</button>
-       
-        <div id="map"></div>
+    </div>   
+    <div id="map" class="half-window">
+    </div>
 
         <script id="place" type="x-tmpl-mustache">
            <div class="container" style="background-image: url({{ image }})"><div class="place-description"><header>{{ title }}</header>{{{ description }}}</div></div>
@@ -47,25 +49,25 @@
         image: 'https://assets3.thrillist.com/v1/image/1731804/size/tl-horizontal_main.jpg', 
         title: 'Bay of Fundy',
         description: '<p>The highest tides on earth, the rarest whales in the world and dinosaur fossils</p>',
-        coords: {lat: 45.535836, lng: -73.712458}
+        coords: {lat: 45.279306, lng: -66.033644}
     },
     {
         image: 'https://assets3.thrillist.com/v1/image/1731813/size/tl-horizontal_main.jpg', 
         title: 'Nunavut',
         description: '<p>Expanses of tundra, craggy mountains and remote villages, accessible only by plane or boat.</p>',
-        coords: {lat: 45.535836, lng: -73.712458}
+        coords: {lat: 67.4895292, lng: -66.0559507}
     },
     {
         image: 'https://innakogan.com/wp-content/uploads/2016/01/pei_briarislandlight_canon-563.jpg', 
         title: 'Prince Edward Island',
         description: '<p>Red-sand beaches, lighthouses and famous seafood like lobster and mussels. </p>',
-        coords: {lat: 45.535836, lng: -73.712458}
+        coords: {lat: 46.494242, lng: -63.406794}
     },
     {
         image: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/02/torngat-mountains-1024x683.jpg', 
         title: 'Torngat Mountains',
         description: '<p> A land of mountains and polar bears, small glaciers, and caribou. </p>',
-        coords: {lat: 45.535836, lng: -73.712458}
+        coords: {lat: 59.4202449, lng:  -64.4997317}
     },
     {
         image: 'https://cdn.theculturetrip.com/wp-content/uploads/2017/02/sunshine-coast-1024x681.jpg', 

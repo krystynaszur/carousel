@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand");
 body { font-family: 'Quicksand', sans-serif; }
 
-.carousel-cell { width: 100vw; /* full width */ height: 50vh; /* height of carousel */ margin-right: 10px; min-width: 250px; color: white; }
+.carousel-cell { width: 100vw; height: 47vh; margin-right: 10px; min-width: 250px; color: white; }
 
 .container { max-width: 1200px; height: 100%; width: 100%; background-repeat: no-repeat; background-position: center; background-size: cover; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; text-align: center; margin: 0 auto; }
 
@@ -9,12 +9,14 @@ body { font-family: 'Quicksand', sans-serif; }
 
 .carousel { z-index: 0; }
 
-.progress-bar { height: 20px; width: 0; background: #7f8c8d; }
+.progress-bar { height: 3vh; width: 0; background: #7f8c8d; }
 
-.place-description { background-color: rgba(0, 0, 0, 0.7); margin: 5vw 15vw; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding: 30px; }
+.place-description { background-color: rgba(0, 0, 0, 0.7); margin: 3vh 15vw; display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; padding: 30px; }
 
 .container p { font-size: 30px; }
 
 .container header { text-transform: uppercase; font-size: 50px; text-shadow: 2px 2px black; }
 
-#map { height: 50vh; /* The height is 400 pixels */ width: 100%; /* The width is the width of the web page */ top: -80px; }
+#map { width: 100%; }
+
+.half-window { height: 50vh; }

@@ -5,9 +5,7 @@ body {
 
 .carousel-cell {
   width: 100vw;
-  /* full width */
-  height: 50vh;
-  /* height of carousel */
+  height: 47vh;
   margin-right: 10px;
   min-width: 250px;
   color: white;
@@ -47,14 +45,14 @@ body {
 }
 
 .progress-bar {
-  height: 20px;
+  height: 3vh;
   width: 0;
   background: #7f8c8d;
 }
 
 .place-description {
   background-color: rgba(0, 0, 0, 0.7);
-  margin: 5vw 15vw;
+  margin: 3vh 15vw;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -71,11 +69,11 @@ body {
 }
 
 #map {
-  height: 50vh;
-  /* The height is 400 pixels */
   width: 100%;
-  /* The width is the width of the web page */
-  top: -80px;
+}
+
+.half-window {
+  height: 50vh;
 }
 
 /*# sourceMappingURL=style.css.map */
