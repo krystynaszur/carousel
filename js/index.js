@@ -41,5 +41,13 @@ function initMap() {
 
   for(var i = 0; i < cells.length; i++){
       var marker = new google.maps.Marker({position: places[i].coords, map: map});
+      var index = cells[i].id;
+      console.log(index);
+
+      google.maps.event.addListener(marker, "click", function() {
+        console.log(index);
+        flkty.selectCell('#'+index);
+      });
+      
    }
 }  
