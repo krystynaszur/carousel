@@ -41,13 +41,16 @@ function initMap() {
 
   for(var i = 0; i < cells.length; i++){
       var marker = new google.maps.Marker({position: places[i].coords, map: map});
-      var index = cells[i].id;
-      console.log(index);
+    marker.sliderId = cells[i].id;
 
-      google.maps.event.addListener(marker, "click", function() {
-        console.log(index);
-        flkty.selectCell('#'+index);
-      });
-      
-   }
-}  
+    google.maps.event.addListener(marker, "click", function() {
+      flkty.selectCell('#'+this.sliderId);
+      console.log(this.sliderId);
+   })
+  }  
+
+  flkty.on( 'change', function(index) {
+    map.setCenter(places[index].coords);
+    map.setZoom(6);
+  });
+}
